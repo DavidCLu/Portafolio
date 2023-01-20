@@ -1,0 +1,42 @@
+<section class="about"  [ngClass]="{'open': moduleState }" >
+
+    <!--INdisplayblock = true , cambia de display:none a display:block. faceSideIdValue. valor del lado del cubo del modulo main  -->
+    <div class="IN"  [ngClass]="{'INdisplayblock': moduleState }" [ngSwitch]="'front'"><!-- faceSideIdValue -->
+
+        <span class="exit" (click)="clickExit()"><i class="bi bi-x-circle"></i></span>
+
+        <div *ngSwitchCase="'front'">
+          <app-cube-face-front></app-cube-face-front>
+        </div>
+        <div *ngSwitchCase="'back'">
+          <app-cube-face-back></app-cube-face-back>
+        </div>
+        <div *ngSwitchCase="'right'">
+          <app-cube-face-right></app-cube-face-right>
+        </div>
+        <div *ngSwitchCase="'left'">
+          <app-cube-face-left></app-cube-face-left>
+        </div>
+        <div *ngSwitchCase="'top'">
+          <app-cube-face-top></app-cube-face-top>
+        </div>
+        <div *ngSwitchCase="'bottom'">
+          <app-cube-face-bottom></app-cube-face-bottom>
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
+    <!-- <h2 class="tittletH2"><span class="tittletH2FisrtL">A</span>bout</h2>
+    <span class="line"></span>
+
+
+
+    <div class="divbox">
+        <div class="me">
+          <p>Hi my name is David a junior developer from Spain, Madrid. 
+            Im a junior developer, trying to create my future in this area </p>
+        </div>
+    </div> -->

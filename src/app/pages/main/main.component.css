@@ -1,0 +1,579 @@
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom:5rem ;
+    
+   
+    padding-left: 15rem;
+}
+
+
+.tittletH2{
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+   
+
+}
+.tittletH2FisrtL{
+    font-size: 5rem;
+}
+.line{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 18%;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.name{
+    position: relative;
+    /* left: 5%; */
+    top: 25%;
+   
+}
+.name p{
+    position: relative;
+    padding: 1rem;
+    width: 32rem;
+    font-size: 50px;
+    font-size: 3.1rem;
+    font-weight: bold;
+    background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\paredes.jpg");
+   
+    color: rgba(245, 179, 56, 0.5);
+    background-size: cover ;
+    background-clip:text;
+    
+}
+.name button{
+    position: relative;
+    top: 2rem;
+    padding: 1rem;
+}
+.name button a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgba(245, 179, 56, 0.5);
+}
+.developer{
+    position: relative;
+   
+}
+.developer::before{
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: cursor 0.8s steps(3) infinite;
+}
+@keyframes cursor{
+    0%,75%{opacity: 1;}
+    76%,100%{opacity: 0;}
+}
+
+.developer{
+    animation: typing 8s steps(20) infinite;
+    overflow: hidden;
+}
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    30%{
+        width: 512px;
+    }
+}
+/*-------------------------------------------*/
+
+.cube {
+    position: relative;
+    transform: translateX(-150px);
+    height: auto;
+    width: 50%;
+    transform-style: preserve-3d;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+}
+
+.cube div{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px) ; 
+
+   
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+}
+
+ span video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.cube div span:nth-child(1){
+    transform: rotateX(0deg) translate3d(0,0,170px) ;
+}
+.cube div span:nth-child(2){
+    transform: rotateX(90deg) translate3d(-12px,35px,170px) ;
+      /* transform: rotateX(90deg) translate3d(0,0,-200px) ; */
+}
+.cube div span:nth-child(2) video{
+    transform: rotateX(180deg) ;
+
+}
+.cube div span:nth-child(3){
+    transform: rotateY(90deg) translate3d(-8px,1px,-160px) ;
+   
+}
+
+/**********************************************/
+
+.about{
+    position: relative;
+    color:  rgba(245, 179, 56, 1);
+    width: 100%;
+
+
+}
+.divbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.me{    
+    width: 30%;
+    margin-top: 5rem;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px; */
+}
+
+
+/*********************************************/
+/* .skillBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px; 
+} */
+/*********************************************/
+.contact{
+    position: relative;
+    color:  rgba(245, 179, 56, 1);
+    width: 100%; 
+}
+/* .contact h2{
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+    
+} */
+
+
+.contact .divBox{
+    margin-top: 5rem;
+    display: block;
+    width: 80%;
+    background-color: rgba(240, 255, 255, 0.1);
+    height: 30rem;
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+
+}
+.contact a i{
+    font-size: 5rem; 
+    padding: 0;
+    margin: 0;
+  color:azure;
+
+}
+
+
+/**********************/
+
+
+.boxFrame{
+ 
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+    /* background-color: red; */
+    transform: translateX(-15rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.boxContainer{
+    position: relative;
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    perspective: 1000px;
+
+}
+.box{
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    /* background-color: rgb(94, 22, 22); */
+    transform-style:preserve-3d ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotateY(-50deg); */
+    /* animation: rotate 50s infinite;     */
+}
+.box1{
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    transform-style:preserve-3d ;
+    /* transform: rotatex(-50deg); */
+  
+    /* animation-timing-function: linear; */
+   
+}
+
+
+@keyframes boxRotate{
+    0%{transform: rotateY(0deg);}
+
+   100%{transform: rotateY(360deg);} 
+}
+
+
+.face{
+
+    width: 22rem;
+    height: 22rem;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: aliceblue;
+    background-color: rgb(230, 161, 57);
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgba(248, 197, 56,0.9) 50%,rgba(240,230,140,0.5)  80%);
+    user-select: none;
+    
+
+}
+
+/*estaba con id en vez de clase cuando estaba con hover*/
+.front{
+    transform: translateZ(11rem);
+}
+
+.back{
+    transform: translateZ(-11rem) rotateY(180deg);
+}
+.left{
+    right: 11rem;
+    transform: rotateY(-90deg);
+}
+.right{
+    left: 11rem;
+    transform: rotateY(90deg);
+}
+.top{
+    bottom: 11rem;
+    transform: rotateX(90deg);
+}
+.bottom{
+    top: 11rem;
+    transform: rotateX(-90deg);
+}
+
+/*hover*/
+/* .box:hover #front{
+    transform: translateZ(20rem);
+}
+
+.box:hover #back{
+    transform: translateZ(-20rem) rotateY(180deg);
+}
+.box:hover #left{
+    right: 20rem;
+    transform: rotateY(-90deg);
+}
+.box:hover #right{
+    left: 20rem;
+    transform: rotateY(90deg);
+}
+.box:hover #top{
+    bottom: 20rem;
+    transform: rotateX(90deg);
+}
+.box:hover #bottom{
+    top: 20rem;
+    transform: rotateX(-90deg);
+} */
+
+/*expandir en vez de hover con click*/
+.expandFront{
+    transform: translateZ(20rem);
+  
+}
+
+.expandBack{
+    transform: translateZ(-20rem) rotateY(180deg);
+}
+.expandLeft{
+    right: 20rem;
+    transform: rotateY(-90deg);
+    
+}
+.expandRight{
+    left: 20rem;
+    transform: rotateY(90deg);
+}
+.expandTop{
+    bottom: 20rem;
+    transform: rotateX(90deg);
+}
+.expandBottom{
+    top: 20rem;
+    transform: rotateX(-90deg);
+} 
+
+
+
+/*BoxIN*/
+
+.box2{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    transform-style:preserve-3d ;
+    animation: rotateIN 50s infinite;    
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotateIN{
+    0%{transform: rotateY(360deg);}
+
+   100%{transform: rotateY(0deg);} 
+}
+
+
+
+.faceIn{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+   
+    font-size: 50px;
+    color: aliceblue;
+    background-color: blue;
+    /* background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\matrix.mp4") ; */
+    background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\matrix.gif");
+}
+#frontIn{
+    transform: translateZ(5rem);
+    box-sizing: border-box;
+}
+
+#backIn{
+    transform: translateZ(-5rem) rotateY(180deg);
+}
+#leftIn{
+    left: 5rem;
+    transform: rotateY(-90deg);
+}
+#rightIn{
+    right: 5rem;
+    transform: rotateY(90deg);
+}
+
+#topIn{
+    top: 5rem;
+    transform: rotateX(90deg);
+}
+#bottomIn{
+    bottom: 5rem;
+    transform: rotateX(-90deg);
+}
+
+
+
+
+/* .v{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    filter: none;
+} */
+
+
+ /* .espacio{
+    width: 300px;
+    height: 300px;
+    margin:0 25%;
+    border: 2px solid;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 1000px;
+    transform: scale(0.75);
+}
+.cubo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style:preserve-3d ;
+    transform: translateZ(-150px);
+    transform: rotateY(0deg);
+    transform: rotateX(10deg);
+     animation: rotate 20s infinite;
+     
+}
+@keyframes rotate{
+    0%{transform: rotateY(0deg);}
+   100%{transform: rotateY(360deg);} 
+
+}
+.cara{
+    border: 1px solid black;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    
+    background-color: rgb(150, 142, 122);
+}
+
+.c1{
+    transform: translateZ(300px);
+}
+.c2{
+    transform:  rotateY(180deg) translateZ(300px);
+}
+.c3{
+    transform: rotateY(-90deg) translateZ(300px);
+}
+.c4{
+    transform: rotateY(90deg) translateZ(300px);
+}
+.c5{
+    transform: rotateX(90deg) translateZ(300px);
+}
+.c6{
+    transform: rotateX(-90deg) translateZ(300px);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*.caraIn1{
+   width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 2em;
+}
+.caratittle{
+  
+
+}
+.caratittletH2{
+    display:inline;
+    
+    font-size: 1.5em;
+    
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+
+    position: relative;
+}
+.caraline{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 130%;
+    position: absolute;
+    bottom: 4px;
+}
+
+
+ .caraIn1divBox{
+    margin-top: 3em;
+    display: block;
+    width: 80%;
+    background-color: rgba(240, 255, 255, 0.1);
+    height: 20em;
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px;
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+   
+}  */

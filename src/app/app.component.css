@@ -1,0 +1,21 @@
+
+app-sidebar{
+    position: relative;
+    left: 0;
+    width: 12rem;
+    height: 100vh;
+    z-index: 1;
+    /* border-top: 1px solid whitesmoke; */
+    box-shadow:0,0,10px rebeccapurple ;
+    position: relative;
+
+}
+
+    
+    app-main{
+        position: relative;
+        
+        display: block;
+        /* padding-left: 15rem; */
+        
+    }

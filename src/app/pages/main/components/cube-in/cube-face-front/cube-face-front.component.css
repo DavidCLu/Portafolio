@@ -1,0 +1,110 @@
+.about{
+    position: relative;
+    width: 0px;
+    height: 0px;
+     background-color: rgb(20, 19, 19);
+    /* width: 100vw;
+    height: 100vh; 
+    padding-top: 8rem;
+    padding-left: 15rem; */
+    opacity: 0;
+    transition: 2s;
+    
+}
+.exit{
+    font-size: 3rem;
+    background-color: rgba(245, 179, 56, 1);
+    color:black;
+    border-radius: 15px;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+.IN{
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    display: none;
+}
+.INdisplayblock{
+    display: block;
+    
+}
+.open{
+    width: 99vw;
+    height: 100vh;
+    display: block;
+    padding-top: 3rem;
+    padding-left: 15rem;
+    opacity: 1;
+    
+}
+
+.tittletH2{
+    position: relative;
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+   
+}
+.tittletH2::after{
+    content: ' ';
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 18%;
+    width: 150%;
+
+}
+.tittletH2FisrtL{
+    font-size: 5rem;
+}
+
+.divbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+}
+.me{    
+    position: relative;
+    width: 40%;
+    height: 12rem;
+    color: aliceblue;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.me p{
+    font-size: 1.5rem;
+    line-height : 45px;
+}
+.meRightside{
+    width: 55%;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+}
+.meRightside img{
+    border-radius: 50%;
+}
+/* .line{
+    position: relative;
+    display: block;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 18%;
+} */

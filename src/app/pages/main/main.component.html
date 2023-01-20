@@ -1,0 +1,172 @@
+<section>
+    <div class="header">
+        <div class="name">
+            <i>
+                <p>Hi,</p>
+                <p>Im David</p>   
+                <div class="developer"><p class="p3">Full Stack Developer! </p> </div>
+                
+                
+              
+            </i>
+            <span> .Net/angular Developer</span><br>
+
+            <button class="btn btn-outline-warning" ><a href="#contact" class="enlace">Contact me!!</a> </button>
+        </div>
+        
+       
+      </div>
+      
+</section>
+<section id="about">
+
+  <div class="about">
+
+    <h2 class="tittletH2"><span class="tittletH2FisrtL">A</span>bout</h2>
+    <span class="line"></span>
+    <div class="divbox">
+        <div class="me">
+          <p>Hi my name is David a junior developer from Spain, Madrid. <br>
+            Im a junior developer, trying to create my future in this area </p>
+        </div>
+
+        <div class="cube">
+          <!-- <video src="assets\matrix.mp4" autoplay="" loop="" class="qq"></video> -->
+          <div>
+            <span>   
+              <video src="assets\matrix.mp4" autoplay="true" loop=""  ></video>
+              </span>
+              <span>
+                <video src="assets\matrix.mp4" autoplay="true" loop=""></video>
+              </span>
+              <span>
+                <video src="assets\matrix.mp4" autoplay="true" loop=""></video>
+              </span>
+            </div>
+        </div>
+    </div>
+
+  </div>
+    
+</section>
+
+<section id="skill">
+
+    <div class="skill">
+
+        <h2 class="tittletH2"><span class="tittletH2FisrtL">S</span>kills</h2>
+        <span class="line"></span>
+        <div class="skillBox">
+
+        </div>
+
+    </div>
+</section>
+<section id="works">
+
+  <div class="works">
+
+      <h2 class="tittletH2"><span class="tittletH2FisrtL">W</span>orks</h2>
+      <span class="line"></span>
+      <div class="skillBox">
+        
+      </div>
+
+  </div>
+</section>
+
+<section id="contact">
+    <div class="contact">
+
+        <h2 class="tittletH2"><span class="tittletH2FisrtL">C</span>ontact</h2>
+        <span class="line"></span>
+        <div class="divBox">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-envelope-at-fill"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>  
+</section>
+
+
+  <section>
+    <!-- <h2 class="tittletH2"><span class="tittletH2FisrtL">C</span>ubo</h2> -->
+
+    <div class="boxFrame" (mousedown)="boxClickdown($event)"                               
+                          (mousemove)="boxMove($event)"
+                          (mouseup)="boxclickup()"
+                          (mouseleave)="boxAutoRotate()" 
+                          >
+        <div class="boxContainer" >
+
+            <div class="box">
+
+                  <div class="box2">
+                      <div class="faceIn" id="frontIn"></div>
+                      <div class="faceIn" id="backIn"></div>
+                      <div class="faceIn" id="leftIn"></div>
+                      <div class="faceIn" id="rightIn"></div>
+                      <div class="faceIn" id="topIn"></div>
+                      <div class="faceIn" id="bottomIn"></div>
+                  </div>
+                  
+                  <div class="box1" [ngStyle]="{'transform': 'rotateY('+ CubeValueX +') rotateX('+ CubeValueY +')'}"
+                                    [ngStyle]="{'animation': styleNone}" 
+                                    >       
+                      <div class="face front"   id="front"  (dblclick)="open($event)"        [ngClass]="{'expandFront': expandBox }"  >1</div><!--front-->
+                      <div class="face back"    id="back"   (dblclick)="faceSideId($event)"  [ngClass]="{'expandBack': expandBox }"   >2</div><!--back-->
+                      <div class="face left"    id="left"   (dblclick)="faceSideId($event)"  [ngClass]="{'expandLeft': expandBox }"   >3</div><!--left-->
+                      <div class="face right"   id="right"  (dblclick)="faceSideId($event)"  [ngClass]="{'expandRight': expandBox }"  >4</div><!--right-->
+                      <div class="face top"     id="top"    (dblclick)="faceSideId($event)"  [ngClass]="{'expandTop': expandBox }"    >5</div><!--top-->
+                      <div class="face bottom"  id="bottom" (dblclick)="faceSideId($event)"  [ngClass]="{'expandBottom': expandBox }" >6</div><!--bot-->
+                  </div>
+            </div>
+            
+            <app-cube  [moduleOpen]="modulestate"  (closeComponent)="moduleClose($event)" [boxSide]="faceSideIdValue"></app-cube>
+              
+        </div>
+    </div>  
+
+  </section>
+
+<!-- <div class="cube">
+
+</div> -->
+  
+
+  <!-- <div class="espacio">
+    <div class="cubo">
+      <span class="cara c1">
+
+
+      
+
+      </span>
+      <span class="cara c2">
+
+      </span>
+      <span class="cara c3"></span>
+      <span class="cara c4"></span>
+      <span class="cara c5"></span>
+      <span class="cara c6"></span>
+
+
+    </div>
+  </div> -->
+           
+  <!-- <div class="caraIn1">
+
+    <div class="caratittle">
+      <h2 class="caratittletH2">Contact
+
+        <span class="caraline"></span>
+      </h2>
+
+    </div>
+
+      <div class="caraIn1divBox">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-envelope-at-fill"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+  </div>   -->

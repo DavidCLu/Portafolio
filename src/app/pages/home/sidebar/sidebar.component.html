@@ -1,0 +1,11 @@
+                                                                          
+<div class="side-nav-contect " (mouseover)="showSlidebar(true)" (mouseout)="showSlidebar(false)" [ngClass]="{'side-nav-contect-open': slidebar}">
+    <ul class="nav-list " >
+
+        <li class="nav-list-item  border" *ngFor="let item of sidebarList">
+            <i class={{item.icon}}></i>
+            <span><a href="#{{item.ref}}" class="item-hiden" [ngClass]="{'item-open': slidebar}">{{item.name}}</a></span>
+        </li>
+        
+    </ul>
+</div>
