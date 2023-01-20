@@ -22,7 +22,7 @@ export class MainComponent implements OnInit {
     readonly sensiti:number = 2;
     clickdown:boolean = false;
     styleNone = "boxRotate 30s infinite";
-    modulestate:boolean = true;               //si es true abrira un modulo del cubo via Input
+    modulestate:boolean = false;               //si es true abrira un modulo del cubo via Input
     faceSideIdValue:string = "";
     expandBox:boolean= false;
    constructor() { }

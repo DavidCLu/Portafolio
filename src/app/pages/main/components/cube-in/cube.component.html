@@ -1,7 +1,7 @@
 <section class="about"  [ngClass]="{'open': moduleState }" >
 
     <!--INdisplayblock = true , cambia de display:none a display:block. faceSideIdValue. valor del lado del cubo del modulo main  -->
-    <div class="IN"  [ngClass]="{'INdisplayblock': moduleState }" [ngSwitch]="'front'"><!-- faceSideIdValue -->
+    <div class="IN"  [ngClass]="{'INdisplayblock': moduleState }" [ngSwitch]="faceSideIdValue "><!-- faceSideIdValue -->
 
         <span class="exit" (click)="clickExit()"><i class="bi bi-x-circle"></i></span>
 
