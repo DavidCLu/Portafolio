@@ -28,6 +28,22 @@ export class MainComponent implements OnInit {
    constructor() { }
    
    ngOnInit(): void {
+    /**skilss */
+        const TagCloud = require('TagCloud');
+
+        const container = '.tagcloud';
+        const texts = [
+          'HTML','CSS','JAVASCRIPT','.NET','ENTITY FRAMEWORK','LINQ','MVC','C#','DDBB','MYSQL','PHP','ANGULAR','BOOTSTRAP'
+        ];
+        const options = {
+          radius: 300,
+          maxSpeed: 'normal',
+          initSpeed: 'fast',
+          direction: 135,
+          keep: 135,
+        };
+
+    TagCloud(container, texts, options);
   }
 
 
@@ -95,6 +111,10 @@ export class MainComponent implements OnInit {
     this.modulestate = true;
 
   }
+
+
+  /********************************************* */
+  
 }
 
 // // 
