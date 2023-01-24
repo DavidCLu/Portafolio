@@ -1,0 +1,118 @@
+.tittletH2{
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+   
+
+}
+.tittletH2FisrtL{
+    font-size: 5rem;
+}
+.line{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 90%;
+}
+
+
+
+.about{
+    position: relative;
+    color:  rgba(245, 179, 56, 1);
+    width: 100%;
+    font-size: 1.5rem;
+    line-height : 45px;
+    
+}
+.divbox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.me{    
+    margin-top: 8rem;
+    position: relative;
+    width: 40%;
+    /* border: 1px solid rgba(245, 179, 56, 1); */
+    margin-right: 2rem ;    
+}
+.me h2{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    line-height : 45px;
+    color: rgba(255, 255, 255, 0.5); 
+    background: -webkit-linear-gradient(90deg,rgb(155, 233, 30)  0%, rgb(9, 233, 139) 40%,rgb(255, 230, 7)  70%);
+    background-clip:text; 
+    -webkit-background-clip: text;
+}
+.meIn{
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 3rem ;
+    color:beige;
+    background: 
+    linear-gradient(#1d1d1a 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+}
+
+.meRightside{
+    width: 50%;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+.meRightside img{
+    border-radius: 50%;
+}
+@media screen and (max-width: 1282px) {
+    .about{
+        font-size: 1rem;
+        line-height: 35px;
+     
+    }
+    .meRightside img{
+        width: 20rem;
+        height: 30rem;
+        margin-top: 4.5em;
+       
+    }
+
+
+}
+@media screen and (max-width: 890px) {
+    #about{
+        margin-bottom: 35rem;
+    }
+    .me{
+        margin-bottom: 2rem;
+        width: 80%;
+      }
+      .meRightside img{
+        margin-top: 1rem;    
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.tittletH2{
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+   
+
+}
+.tittletH2FisrtL{
+    font-size: 5rem;
+}
+.line{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 90%;
+}
+
+.skillBox{
+    margin-top: 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    align-items: center;
+}
+.skills{
+    color: aliceblue;
+    width: 40%;
+}
+.skills h2{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    line-height : 45px;
+    color: rgba(255, 255, 255, 0.5); 
+    background: -webkit-linear-gradient(90deg,rgb(155, 233, 30)  0%, rgb(9, 233, 139) 40%,rgb(255, 230, 7)  70%);
+    background-clip:text; 
+    -webkit-background-clip: text;
+}
+.skills p{
+    font-size: 1.5rem;
+    line-height : 45px;
+    color:beige;
+
+}
+.languages{
+    color: aliceblue;
+}
+.tagcloud{
+    width: 40rem;
+    color: #00FF7F; 
+    background-clip:text; 
+    font-weight: bold;
+    
+}
+@media screen and (max-width: 1380px) {
+    .skills{
+        width: 23rem;
+    }
+    .skills h2{
+        font-size: 4rem;
+
+      }
+      .skills p{
+        font-size: 1rem;
+        line-height : 35px;
+        color:beige;
+        width: 22rem;
+    }
+}
+    @media screen and (max-width: 1247px) {
+        .skills{
+            width: 75%;
+        }
+        .skills h2{
+            font-size: 5rem;
+          }
+          .skills p{
+            font-size: 1rem;
+            line-height : 35px;
+            color:beige;
+            width: 100%;
+        }
+        #skill{
+            margin-bottom:20rem ;
+        }
+}

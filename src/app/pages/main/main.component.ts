@@ -33,12 +33,12 @@ export class MainComponent implements OnInit {
 
         const container = '.tagcloud';
         const texts = [
-          'HTML','CSS','JAVASCRIPT','.NET','ENTITY FRAMEWORK','LINQ','MVC','C#','DDBB','MYSQL','PHP','ANGULAR','BOOTSTRAP'
+          '.NET','ANGULAR','JAVASCRIPT','MYSQL','ENTITY FRAMEWORK','LINQ','MVC','C#','DDBB','HTML','PHP','CSS','BOOTSTRAP'
         ];
         const options = {
           radius: 300,
-          maxSpeed: 'normal',
-          initSpeed: 'fast',
+          maxSpeed: 'fast',
+          initSpeed: 'normal',//normal
           direction: 135,
           keep: 135,
         };

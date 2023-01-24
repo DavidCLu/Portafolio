@@ -108,172 +108,10 @@ section{
 
 /**********************************************/
 
-.about{
-    position: relative;
-    color:  rgba(245, 179, 56, 1);
-    width: 100%;
-    font-size: 1.5rem;
-    line-height : 45px;
-    
-}
-.divbox{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-.me{    
-    margin-top: 8rem;
-    position: relative;
-    width: 40%;
-    /* border: 1px solid rgba(245, 179, 56, 1); */
-    margin-right: 2rem ;    
-}
-.me h2{
-    margin-bottom: 5rem;
-    font-size: 5rem;
-    line-height : 45px;
-    color: rgba(255, 255, 255, 0.5); 
-    background: -webkit-linear-gradient(90deg,rgb(155, 233, 30)  0%, rgb(9, 233, 139) 40%,rgb(255, 230, 7)  70%);
-    background-clip:text; 
-    -webkit-background-clip: text;
-}
-.meIn{
-    height: 15rem;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    padding: 2rem;
-    color:beige;
-    background: 
-    linear-gradient(#1d1d1a 0 0) padding-box, /*this is your grey background*/
-    linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
-    border: 1px solid transparent;
-    border-radius: 50px;
 
-}
-
-.meRightside{
-    width: 50%;   
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    height: 35rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-
-}
-.meRightside img{
-    border-radius: 50%;
-}
-@media screen and (max-width: 1282px) {
-    .about{
-        font-size: 1rem;
-        line-height: 35px;
-     
-    }
-    .meRightside img{
-        width: 20rem;
-        height: 30rem;
-        margin-top: 4.5em;
-       
-    }
-
-
-}
-@media screen and (max-width: 890px) {
-    #about{
-        margin-bottom: 35rem;
-    }
-    .me{
-        margin-bottom: 2rem;
-        width: 80%;
-      }
-      .meRightside img{
-        margin-top: 1rem;    
-    }
-}
 /*********************************************/
-/* .skillBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(240, 255, 255, 0.1);
-    border: 1px solid rgba(245, 179, 56, 1);
-    border-radius: 50px; 
-} */
-.skillBox{
-    margin-top: 5rem;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;   
-    align-items: center;
-}
-.skills{
-    color: aliceblue;
-    width: 40%;
-}
-.skills h2{
-    margin-bottom: 5rem;
-    font-size: 5rem;
-    line-height : 45px;
-    color: rgba(255, 255, 255, 0.5); 
-    background: -webkit-linear-gradient(90deg,rgb(155, 233, 30)  0%, rgb(9, 233, 139) 40%,rgb(255, 230, 7)  70%);
-    background-clip:text; 
-    -webkit-background-clip: text;
-}
-.skills p{
-    font-size: 1.5rem;
-    line-height : 45px;
-    color:beige;
 
-}
-.languages{
-    color: aliceblue;
-}
-.tagcloud{
-    width: 40rem;
-    color: #00FF7F; 
-    background-clip:text; 
-    font-weight: bold;
-    
-}
-@media screen and (max-width: 1380px) {
-    .skills{
-        width: 23rem;
-    }
-    .skills h2{
-        font-size: 4rem;
-
-      }
-      .skills p{
-        font-size: 1rem;
-        line-height : 35px;
-        color:beige;
-        width: 22rem;
-    }
-}
-    @media screen and (max-width: 1247px) {
-        .skills{
-            width: 75%;
-        }
-        .skills h2{
-            font-size: 5rem;
-          }
-          .skills p{
-            font-size: 1rem;
-            line-height : 35px;
-            color:beige;
-            width: 100%;
-        }
-        #skill{
-            margin-bottom:20rem ;
-        }
-}
 /*********************************************/
 .contact{
     position: relative;
@@ -292,31 +130,6 @@ section{
 } */
 
 
-.contact .divBox{
-    margin-top: 8rem;
-    display: block;
-    width: 80%;
-    background-color: #323431;
-    height: 30rem;
-    border: 1px solid rgba(245, 179, 56, 1);
-    border-radius: 50px;
-
-    display: flex;
-    justify-content:space-around ;
-    align-items:center;
-    background: 
-    linear-gradient(#323431 0 0) padding-box, /*this is your grey background*/
-    linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
-    border: 1px solid transparent;
-
-}
-.contact a i{
-    font-size: 5rem; 
-    padding: 0;
-    margin: 0;
-  color:azure;
-
-}
 
 
 /**********************/
@@ -540,7 +353,7 @@ section{
 
 
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1290px) , (max-height:720px ) {
     .box1 {
         width: 16rem;
         height: 16rem;

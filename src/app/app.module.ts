@@ -16,6 +16,9 @@ import { CubeFaceRightComponent } from './pages/main/components/cube-in/cube-fac
 import { CubeFaceLeftComponent } from './pages/main/components/cube-in/cube-face-left/cube-face-left.component';
 import { CubeFaceTopComponent } from './pages/main/components/cube-in/cube-face-top/cube-face-top.component';
 import { CubeFaceBottomComponent } from './pages/main/components/cube-in/cube-face-bottom/cube-face-bottom.component';
+import { AboutComponent } from './pages/main/components/about/about.component';
+import { SkillsComponent } from './pages/main/components/skills/skills.component';
+import { ContactComponent } from './pages/main/components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { CubeFaceBottomComponent } from './pages/main/components/cube-in/cube-fa
     CubeFaceRightComponent,
     CubeFaceLeftComponent,
     CubeFaceTopComponent,
-    CubeFaceBottomComponent
+    CubeFaceBottomComponent,
+    AboutComponent,
+    SkillsComponent,
+    ContactComponent
     
   ],
   imports: [

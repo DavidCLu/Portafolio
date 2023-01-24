@@ -1,0 +1,46 @@
+.tittletH2{
+    display:inline;
+    font-size: 4rem;
+    height: 100%;
+    color: rgba(245, 179, 56, 0.1); 
+    background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
+    background-clip:text; 
+   
+
+}
+.tittletH2FisrtL{
+    font-size: 5rem;
+}
+.line{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 90%;
+}
+
+
+.contact .divBox{
+    margin-top: 8rem;
+    display: block;
+    width: 80%;
+    background-color: #323431;
+    height: 30rem;
+    border: 1px solid rgba(245, 179, 56, 1);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+    background: 
+    linear-gradient(#323431 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
+    border: 1px solid transparent;
+
+}
+.contact a i{
+    font-size: 5rem; 
+    padding: 0;
+    margin: 0;
+  color:azure;
+
+}
