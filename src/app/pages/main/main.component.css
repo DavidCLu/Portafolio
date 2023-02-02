@@ -54,7 +54,7 @@ section{
     font-size: 50px;
     font-size: 3.1rem;
     font-weight: bold;
-    background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\paredes.jpg");   
+    background: url("../../../assets/paredes.jpg");   
     color: rgba(245, 179, 56, 0.5);
     background-size: cover ;
     background-clip:text;
