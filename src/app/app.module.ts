@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './pages/home/sidebar/sidebar.component';
 import { MainComponent } from './pages/main/main.component';
-import { YouTubePlayerModule } from "@angular/youtube-player";
 import { CubeComponent } from './pages/main/components/cube-in/cube.component';
 import { CubeFaceFrontComponent } from './pages/main/components/cube-in/cube-face-front/cube-face-front.component';
 import { CubeFaceBackComponent } from './pages/main/components/cube-in/cube-face-back/cube-face-back.component';
@@ -42,8 +41,8 @@ import { ContactComponent } from './pages/main/components/contact/contact.compon
     BrowserModule,
     AppRoutingModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
-    YouTubePlayerModule
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

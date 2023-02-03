@@ -322,7 +322,7 @@ section{
     color: aliceblue;
     background-color: blue;
     /* background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\matrix.mp4") ; */
-    background: url("C:\Users\david.cl\Desktop\Nueva carpeta (4)\angular\porta\src\assets\matrix.gif");
+    background: url("../../../assets/matrix.gif");
 }
 #frontIn{
     transform: translateZ(5rem);
