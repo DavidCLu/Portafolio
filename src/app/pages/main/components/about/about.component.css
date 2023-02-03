@@ -111,8 +111,42 @@
 
 
 
+/*********************probando*****/
+ /* .l1{
+     position: relative;
+    top: -2.5rem;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 45%;
+    display: inline-block;
+    transform: rotate(0deg);
+
+}
+.l2{
+    
+    position: relative;
+    top: -2.5rem;
+    background-color: rgba(240, 255, 255, 0.1);
+    border: 1px solid rgba(245, 179, 56, 1);
+    width: 45%;
+    display: inline-block;
+    transform-origin: left;
+
+    transform: rotate(180deg) ;
+}
+h2:hover ~ .l2{
+    transform: rotate(0deg) ;
+    transition: 3s;
+}
+h2:hover ~ .divbox{
+    opacity: 1;
+    transition: 4s;
+    transform: translate(0rem);
+} 
 
 
 
 
 
+
+ */
