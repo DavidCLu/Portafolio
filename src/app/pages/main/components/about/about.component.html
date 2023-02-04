@@ -2,10 +2,12 @@
 
     <div class="about">
       
-      <h2 class="tittletH2"><span class="tittletH2FisrtL">A</span>bout</h2><br>
-      <span class="line"></span>
-      <!-- <span class="l1"></span><span class="l2"></span> -->
-      <div class="divbox">
+      <h2 class="tittletH2"><span class="tittletH2FisrtL">A</span>bout</h2><br><br>
+      <!-- <span class="line"></span> -->
+      <span class="l1"  ></span>
+      <span class="l2"  [ngClass]="{'moveOpen': moveLeft ,'moveClose': moveRight }"></span>
+      <div class="divbox"  [ngClass]="{'moveLeft': moveLeft ,'moveRight': moveRight }" >
+        <!-- [ngStyle]="{'transform': 'translate('+ transport + 'rem)'}" -->
           <div class="me">
             <h2>A Little about Me</h2>
             <div class="meIn">
@@ -20,7 +22,7 @@
             </div>
           </div>
           <div class="meRightside">
-              <img src="../../../assets/face.jpg" alt=""><br><br>
+              <img src="../../../../../assets/yo.png" alt=""><br><br>
           </div>
   
       </div>
