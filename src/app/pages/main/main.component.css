@@ -2,16 +2,16 @@ main{
     display: block;
 }
 section{
-    
     position: relative;
     width: 100%;
     height: auto;
     margin-bottom:5rem ;
-    
     padding-bottom: 9rem;
-    padding-left: 15rem;
+    /* padding-left: 9rem; */
 }
-
+#intro, #about,#works,#contact{
+        padding-left: 9rem;
+}
 
 .tittletH2{
     display:inline;

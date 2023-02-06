@@ -1,3 +1,8 @@
+.skillLeft{
+    padding-left: 9rem;
+    width: 100%;
+
+}
 .tittletH2{
     display:inline;
     font-size: 4rem;
@@ -20,7 +25,6 @@
 
 .skillBox{
     margin-top: 2rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;   
@@ -89,15 +93,24 @@
             margin-bottom:20rem ;
         }
 }
+@media screen and (max-width: 740px) {
+    .skills h2{
+        font-size: 3.5rem;
+      }
+}
 
 .skillAbi{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* background-image: url('../../../../../assets/icono-img/img-perspectiva2.jpg'); */
+    background-image: url('../../../../../assets/icono-img/img-perspectiva3.jpg');
     background-position: center;
     border-radius: 10px;
+    margin-top: 2rem;
+    padding: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .abiBox{
@@ -110,7 +123,9 @@
     align-items: end;
     background-image: url('../../../../../assets/P_rustico.jpg');
     border-radius: 30px;
-    margin:   3rem 0;
+    margin: 3rem 0;
+    padding: 1rem;
+    
 }
 .abiBox .img{
     position: absolute;
@@ -187,4 +202,13 @@ backface-visibility: hidden;
  
     transform: rotateY(0deg);
     transition: all 2s ease-in-out;
+}
+
+@media screen and (max-width: 1154px) {
+    .skillAbi{
+        height: 230vh;
+        background-color: #00FF7F;
+        background-size: cover;
+        
+    }
 }
