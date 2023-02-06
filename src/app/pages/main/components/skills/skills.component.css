@@ -19,7 +19,7 @@
 }
 
 .skillBox{
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +71,8 @@
     }
 }
     @media screen and (max-width: 1247px) {
+        .skillBox{
+            margin-top: 8rem;}
         .skills{
             width: 75%;
         }
@@ -90,9 +92,12 @@
 
 .skillAbi{
     width: 100%;
-    
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-image: url('../../../../../assets/icono-img/img-perspectiva2.jpg'); */
+    background-position: center;
+    border-radius: 10px;
 }
 
 .abiBox{
@@ -105,24 +110,38 @@
     align-items: end;
     background-image: url('../../../../../assets/P_rustico.jpg');
     border-radius: 30px;
+    margin:   3rem 0;
 }
 .abiBox .img{
     position: absolute;
     top: -3.5rem;
     width: 50%;
     height: 80%;
-    background-size: 150px;
+    background-size: 160px;
     background-repeat: no-repeat;
+   
 }
 .skillAbi .abiBox .img1{
-    background-image: url('../../../../../assets/c.png');
+    background-image: url('../../../../../assets/icono-img/icono-angular.png');
 }
 .skillAbi .abiBox .img2{
-    background-image: url('../../../../../assets/icono_angular.png');
-    background-size: 170px;
+    background-image: url('../../../../../assets/icono-img/icono-javascript.png');
+   
 }
 .skillAbi .abiBox .img3{
-    background-image: url('../../../../../assets/c.png');
+    background-image: url('../../../../../assets/icono-img/icono-asp.png');
+    background-size: 150px;
+
+}
+.skillAbi .abiBox .img4{
+    background-image: url('../../../../../assets/icono-img/icono-c.png');
+    background-size: 150px;
+}
+.skillAbi .abiBox .img5{
+    background-image: url('../../../../../assets/icono-img/icono-entity.png');
+}
+.skillAbi .abiBox .img6{
+    background-image: url('../../../../../assets/icono-img/icono-sql.png');
 }
 .abiBox .text{
     position: relative;
@@ -132,7 +151,7 @@
     border-radius: 30px;
     color: aliceblue;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
 }
@@ -140,6 +159,14 @@
 width: 80%;
 transform: rotateY(180deg);
 backface-visibility: hidden;
+
+}
+.abiBox .text h2{
+    position: absolute;
+    font-weight: bold;
+    font-size: 2rem;
+    color: antiquewhite;
+
 }
 .abiBox:hover .img{
     transform: translateX(9rem);
@@ -149,10 +176,15 @@ backface-visibility: hidden;
 .abiBox:hover .text{
     height: 100%;
     transform: rotateY(0deg);
-    
+    justify-content: start; 
     transition: all 2s ease-in-out;
 }
-    
-.abiBox:hover .text p{transform: rotateY(0deg);
+.abiBox:hover .text h2{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}    
+.abiBox:hover .text p{
+ 
+    transform: rotateY(0deg);
     transition: all 2s ease-in-out;
 }
