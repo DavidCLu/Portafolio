@@ -12,7 +12,16 @@ section{
 #intro, #about,#works,#contact{
         padding-left: 9rem;
 }
-
+@media screen and (max-width: 510px) {
+    #intro, #about,#works,#contact{
+        padding-left: 4rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    #intro, #about,#works,#contact{
+        padding-left: 1rem;
+    }
+}
 .tittletH2{
     display:inline;
     font-size: 4rem;
@@ -20,12 +29,20 @@ section{
     color: rgba(245, 179, 56, 0.1); 
     background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
     background-clip:text; 
-   
-
 }
 .tittletH2FisrtL{
     font-size: 5rem;
 }
+@media screen and (max-width: 336px) {
+    .tittletH2{
+        font-size: 3rem;
+    }
+    .tittletH2FisrtL{
+        font-size: 4rem;
+    }
+}
+
+
 .line{
     display: flex;
     background-color: rgba(240, 255, 255, 0.1);
@@ -58,9 +75,7 @@ section{
     color: rgba(245, 179, 56, 0.5);
     background-size: cover ;
     background-clip:text;
-    
 }
-
 .name button{
     position: relative;
     top: 2rem;
@@ -100,6 +115,60 @@ section{
     }
     30%{
         width: 512px;
+    }
+}
+@media screen and (max-width: 676px) {
+    .name p{
+        width: 22rem;
+        font-size: 2.1rem;
+        padding: 0.5rem;
+    }
+    @keyframes typing {
+        0%{
+            width: 0;
+        }
+        30%{
+            width: 350px;
+        }
+    }
+}
+@media screen and (max-width: 510px) {
+    .name p{
+        width: 16rem;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    @keyframes typing {
+        0%{
+            width: 0;
+        }
+        30%{
+            width: 255px;
+        }
+    }
+    .name button a{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 336px) {
+    .name p{
+        width: 11rem;
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    @keyframes typing {
+        0%{
+            width: 0;
+        }
+        30%{
+            width: 176px;
+        }
+    }
+    .name span{
+        font-size: 0.6rem;
+    }
+    .name button a{
+        font-size: 0.8rem;
     }
 }
 /*-------------------------------------------*/
@@ -411,6 +480,73 @@ section{
         transform: rotateX(-90deg);
     } 
   }
+
+  @media screen and (max-width: 1290px) , (max-height:720px ) {
+    .box1 {
+        width: 16rem;
+        height: 16rem;
+    }
+    .face{
+        width: 16rem;
+        height: 16rem;
+    }
+    .front{
+        transform: translateZ(8rem);
+    }
+    
+    .back{
+        transform: translateZ(-8rem) rotateY(180deg);
+    }
+    .left{
+        right: 8rem;
+        transform: rotateY(-90deg);
+    }
+    .right{
+        left: 8rem;
+        transform: rotateY(90deg);
+    }
+    .top{
+        bottom: 8rem;
+        transform: rotateX(90deg);
+    }
+    .bottom{
+        top: 8rem;
+        transform: rotateX(-90deg);
+    }
+    .expandFront{
+        transform: translateZ(15rem);
+      
+    }
+    
+    .expandBack{
+        transform: translateZ(-15rem) rotateY(180deg);
+    }
+    .expandLeft{
+        right: 15rem;
+        transform: rotateY(-90deg);
+        
+    }
+    .expandRight{
+        left: 15rem;
+        transform: rotateY(90deg);
+    }
+    .expandTop{
+        bottom: 15rem;
+        transform: rotateX(90deg);
+    }
+    .expandBottom{
+        top: 15rem;
+        transform: rotateX(-90deg);
+    } 
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .boxFrame{display: none;}
+  }
+
+
+
 /* .v{
     width: 100%;
     height: 100%;

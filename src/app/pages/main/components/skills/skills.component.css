@@ -1,7 +1,19 @@
+.skill{
+    /* overflow-x: hidden; */
+}
 .skillLeft{
     padding-left: 9rem;
     width: 100%;
-
+}
+@media screen and (max-width: 510px) {
+    .skillLeft{
+        padding-left: 4rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .skillLeft{
+        padding-left: 1rem;
+    }
 }
 .tittletH2{
     display:inline;
@@ -10,17 +22,25 @@
     color: rgba(245, 179, 56, 0.1); 
     background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
     background-clip:text; 
-   
-
 }
 .tittletH2FisrtL{
     font-size: 5rem;
+    
+}
+@media screen and (max-width: 336px) {
+    .tittletH2{
+        font-size: 3rem;
+    }
+    .tittletH2FisrtL{
+        font-size: 4rem;
+    }
 }
 .line{
     display: flex;
     background-color: rgba(240, 255, 255, 0.1);
     border: 1px solid rgba(245, 179, 56, 1);
     width: 90%;
+    
 }
 
 .skillBox{
@@ -57,7 +77,6 @@
     color: #00FF7F; 
     background-clip:text; 
     font-weight: bold;
-    
 }
 @media screen and (max-width: 1380px) {
     .skills{
@@ -65,7 +84,6 @@
     }
     .skills h2{
         font-size: 4rem;
-
       }
       .skills p{
         font-size: 1rem;
@@ -98,17 +116,46 @@
         font-size: 3.5rem;
       }
 }
+@media screen and (max-width: 645px) {
+    .tagcloud{
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    .skillBox{
+        margin-top: 5rem;}
 
+    .skills h2{
+        font-size: 2.5rem;
+        width: 15rem;
+        line-height : 25px;
+
+      }
+      .skills p{
+        font-size: 0.8rem;
+        line-height : 25px;
+    }
+}
+@media screen and (max-width: 300px) {
+
+    .skills h2{
+        font-size: 1.8rem;
+        width: 10rem;
+        line-height : 25px;
+      }
+}
+/***************************/
 .skillAbi{
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    align-items:center;
     flex-wrap: wrap;
     background-image: url('../../../../../assets/icono-img/img-perspectiva3.jpg');
     background-position: center;
     border-radius: 10px;
-    margin-top: 2rem;
-    padding: 8rem;
+    margin-top: 7rem;
+    padding: 5rem;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -117,13 +164,12 @@
     position: relative;
     width: 300px;
     height: 200px;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: end;
     background-image: url('../../../../../assets/P_rustico.jpg');
     border-radius: 30px;
-    margin: 3rem 0;
+    margin: 3rem 0.8rem;
     padding: 1rem;
     
 }
@@ -184,7 +230,9 @@ backface-visibility: hidden;
 
 }
 .abiBox:hover .img{
-    transform: translateX(9rem);
+    /* transform: translateX(9rem); */
+    transform: translateX(98%);
+
     transition: all 2s ease-in-out;
     z-index: 2;
 }
@@ -204,11 +252,62 @@ backface-visibility: hidden;
     transition: all 2s ease-in-out;
 }
 
-@media screen and (max-width: 1154px) {
+
+@media screen and (max-width: 1148px) {
     .skillAbi{
-        height: 230vh;
+        height: auto;
         background-color: #00FF7F;
         background-size: cover;
         
+    }
+}
+@media screen and (max-width: 820px) {
+    .skillAbi{
+        height:fit-content;
+        background-size:90%;
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .skillAbi{
+        padding: 3rem;
+    }
+.skillAbi .abiBox .img{
+        top: -3.5rem;
+        width: 115px;
+        background-size: 115px;
+    }
+    .abiBox:hover .img{
+        transform: translateX(100%);
+    }
+
+}
+@media screen and (max-width: 410px) {
+
+    .abiBox:hover .img{
+        transform: translateX(110%);
+    }
+    .abiBox .text p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .skillAbi{
+        padding: 2rem;
+    }
+    .abiBox:hover .img{
+        transform: translateX(95%);
+    }
+}
+@media screen and (max-width: 322px) {
+    .skillAbi{
+        padding: 1rem;
+    }
+    .abiBox:hover .img{
+        transform: translateX(80%);
+    }
+    .abiBox .text p{
+        font-size: 0.7rem;
     }
 }

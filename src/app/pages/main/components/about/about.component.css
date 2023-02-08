@@ -6,12 +6,17 @@
     color: rgba(245, 179, 56, 0.1); 
     background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
     background-clip:text; 
-    
-   
-
 }
 .tittletH2FisrtL{
     font-size: 5rem;
+}
+@media screen and (max-width: 336px) {
+    .tittletH2{
+        font-size: 3rem;
+    }
+    .tittletH2FisrtL{
+        font-size: 4rem;
+    }
 }
 .line{
     display: flex;
@@ -119,13 +124,52 @@
         margin-top: 1rem;    
     }
 }
+@media screen and (max-width: 560px) {
+
+    .divbox{
+        margin-top: -1rem;
+    }
+    .me h2{
+        font-size: 3rem;
+        width: 11rem;
+        line-height: 30px;
+      }
+      .meIn p{
+        font-size: 0.8rem;
+        line-height : 25px;
+      }
+      .meRightside{
+        height: 20rem; 
+        width: 100%;   
+    }
+      .meRightside img{
+        margin-top: 3rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 300px) {
+
+    .divbox{
+        margin-top: -1rem;
+    }
+    .me h2{
+        font-size: 3rem;
+        width: 11rem;
+        line-height: 30px;
+      }
+      .meIn p{
+        font-size: 0.8rem;
+        line-height : 25px;
+      }
+
+}
 
 
 
 /*********************probando*****/
   .l1{
      position: relative;
-    top: -2.5rem;
+    top: -5rem;
     background-color: rgba(240, 255, 255, 0.1);
     border: 1px solid rgba(245, 179, 56, 1);
     width: 45%;
@@ -136,7 +180,7 @@
 .l2{
     
     position: relative;
-    top: -2.5rem;
+    top: -5rem;
     background-color: rgba(240, 255, 255, 0.1);
     border: 1px solid rgba(245, 179, 56, 1);
     width: 45%;

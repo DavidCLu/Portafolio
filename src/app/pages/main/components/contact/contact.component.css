@@ -5,11 +5,17 @@
     color: rgba(245, 179, 56, 0.1); 
     background: linear-gradient(90deg,rgba(252,176,69,1)  0%, rgb(248, 197, 56) 50%,rgba(240,230,140,1)  80%);
     background-clip:text; 
-   
-
 }
 .tittletH2FisrtL{
     font-size: 5rem;
+}
+@media screen and (max-width: 336px) {
+    .tittletH2{
+        font-size: 3rem;
+    }
+    .tittletH2FisrtL{
+        font-size: 4rem;
+    }
 }
 .line{
     display: flex;
