@@ -100,11 +100,13 @@ section{
     position: relative;
     top: 2rem;
     padding: 1rem;
+    z-index: 2;
 }
 .name button a{
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgba(245, 179, 56, 0.5);
+    /* color: rgba(245, 179, 56, 0.5);  */
+    color: rgb(248, 213, 167);
 }
 .developer{
     position: relative;
@@ -221,10 +223,10 @@ section{
     animation-duration: 5s ;
 }
 .estrellas span:nth-child(8){
-    top: 200px;
+    top: 160px;
     right: 750px;
     animation-delay: 0s;
-    animation-duration: 8s ;
+    animation-duration: 7s ;
 }
 .estrellas span:nth-child(9){
     top: 300px;
