@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
     modulestate:boolean = false;               //si es true abrira un modulo del cubo via Input
     faceSideIdValue:string = "";
     expandBox:boolean= false;
+    showStar:string="none";
    constructor() { }
    
    ngOnInit(): void {
@@ -99,7 +100,10 @@ export class MainComponent implements OnInit {
 
 
   /********************************************* */
-  
+  showstar(){
+    this.showStar= "block";
+    console.log(this.showStar);
+  }
 }
 
 // // 

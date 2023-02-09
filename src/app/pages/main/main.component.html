@@ -1,5 +1,5 @@
 <section id="intro">
-    <div class="header">
+    <div class="header" (mousemove)="showstar()">
         <div class="name">
             <i>
                 <p>Hi,</p>
@@ -10,8 +10,20 @@
               
               <button class="btn btn-outline-warning" ><a href="#contact" class="enlace">Contact me!!</a> </button>
         </div>
-        
-       
+        <div class="estrellas" [ngStyle]="{'display':showStar}">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
       </div>
       
 </section>

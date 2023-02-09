@@ -2,6 +2,7 @@ main{
     display: block;
 }
 section{
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: auto;
@@ -9,19 +10,10 @@ section{
     padding-bottom: 9rem;
     /* padding-left: 9rem; */
 }
-#intro, #about,#works,#contact{
+ /*#intro,*/#about,#works,#contact{
         padding-left: 9rem;
 }
-@media screen and (max-width: 510px) {
-    #intro, #about,#works,#contact{
-        padding-left: 4rem;
-    }
-}
-@media screen and (max-width: 450px) {
-    #intro, #about,#works,#contact{
-        padding-left: 1rem;
-    }
-}
+
 .tittletH2{
     display:inline;
     font-size: 4rem;
@@ -50,19 +42,47 @@ section{
     width: 90%;
 }
 .header{
-    height: 100vh;
+    height: 800px;
     position: relative;
     color: aliceblue;
     width: 100%;
     display: flex;
     justify-content: space-between;
-   
+    background-image: url('../../../assets/imagenes/img-tierra.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: scaleImgTierra 50s linear infinite;
 }
+.header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(rgba(29, 29, 26,0.1)  0%, rgba(29, 29, 26,0.5) 20%, rgba(29, 29, 26,0.8) 50%,rgba(29, 29, 26,01)  80%);
+    bottom: -50px;
+}
+/* @keyframes scaleImgTierra{
+    0%,100%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+} */
+
 .name{
     position: relative;
     /* left: 5%; */
     top: 25%;
-   
+    padding-left: 9rem;/*prueba*/
+}
+@media screen and (max-width: 510px) {
+    /*#intro,*/ #about,#works,#contact ,.name{
+        padding-left: 4rem;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    /*#intro,*/ #about,#works,#contact,.name{
+        padding-left: 1rem;
+    }
 }
 .name p{
     position: relative;
@@ -90,6 +110,10 @@ section{
     position: relative;
    
 }
+.developer{
+    animation: typing 8s steps(20) infinite;
+    overflow: hidden;
+}
 .developer::before{
     content: "";
     top: 0;
@@ -105,10 +129,6 @@ section{
     76%,100%{opacity: 0;}
 }
 
-.developer{
-    animation: typing 8s steps(20) infinite;
-    overflow: hidden;
-}
 @keyframes typing {
     0%{
         width: 0;
@@ -117,6 +137,104 @@ section{
         width: 512px;
     }
 }
+
+
+.estrellas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.estrellas span{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,0.1);
+    animation: starFall 3s linear infinite;
+    left: initial;
+    transform: rotate(315deg)
+    
+}
+.estrellas span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes starFall{
+    0%{ transform: rotate(315deg) translateX(0);opacity: 0;}
+    10%{opacity: 1;}
+    60%{opacity: 1;}
+    100%{transform: rotate(315deg) translateX(-460px);opacity: 0;}
+}
+.estrellas span:nth-child(1){
+    top: 0;
+    right: 0;
+    animation-delay: 0;
+    animation-duration:1s ;
+
+}
+.estrellas span:nth-child(2){
+    top: 0;
+    right: 80px;
+    animation-delay: -0.2;
+    animation-duration:3s ;
+}
+.estrellas span:nth-child(3){
+    top: 80px;
+    right: 0;
+    animation-delay: 0.1s;
+    animation-duration:2s ;
+}
+.estrellas span:nth-child(4){
+    top: 0;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s ;
+}
+.estrellas span:nth-child(5){
+    top: 0;
+    right: 500px;
+    animation-delay: 0.7s;
+    animation-duration: 2.5s ;
+}
+.estrellas span:nth-child(6){
+    top: 300px;
+    right: 400px;
+    animation-delay: 0s;
+    animation-duration: 1.65s ;
+}
+.estrellas span:nth-child(7){
+    top: 0px;
+    right: 650px;
+    animation-delay: 1.3s;
+    animation-duration: 5s ;
+}
+.estrellas span:nth-child(8){
+    top: 200px;
+    right: 750px;
+    animation-delay: 0s;
+    animation-duration: 8s ;
+}
+.estrellas span:nth-child(9){
+    top: 300px;
+    right: 900px;
+    animation-delay: 0s;
+    animation-duration: 4s ;
+}
+
+
+
 @media screen and (max-width: 676px) {
     .name p{
         width: 22rem;
