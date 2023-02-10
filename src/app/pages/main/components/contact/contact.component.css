@@ -1,3 +1,12 @@
+.contact{
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    /* display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; */
+}
 .tittletH2{
     display:inline;
     font-size: 4rem;
@@ -26,11 +35,14 @@
 
 
 .contact .divBox{
+    position: relative;
     margin-top: 8rem;
     display: block;
-    width: 80%;
-    background-color: #323431;
+    width: 80%; 
     height: 30rem;
+    /* width: 40rem;
+    height: 10rem; */
+    background-color: #323431;
     border: 1px solid rgba(245, 179, 56, 1);
     border-radius: 50px;
 
@@ -41,12 +53,25 @@
     linear-gradient(#323431 0 0) padding-box, /*this is your grey background*/
     linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
     border: 1px solid transparent;
-
+    /* transform: rotateY(-25deg); */
+    /* transform:   translateZ(-5rem) translatey(12rem); */
 }
+/* .contact .divBox:hover{
+    transform:   translateZ(1rem) translatey(20rem);
+    transition: all 3s ease-in-out;
+
+} */
 .contact a i{
     font-size: 5rem; 
     padding: 0;
     margin: 0;
   color:azure;
 
+}
+
+.camino{
+    width: 80%;
+    height: 50rem;
+    background-color: red;
+    transform: translateZ(-20rem)  rotateX(90deg);
 }
