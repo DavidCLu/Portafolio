@@ -38,22 +38,23 @@
     position: relative;
     margin-top: 8rem;
     display: block;
-    width: 80%; 
+    width: 90%; 
     height: 30rem;
     /* width: 40rem;
     height: 10rem; */
     background-color: #323431;
     border: 1px solid rgba(245, 179, 56, 1);
     border-radius: 50px;
-
+    
     display: flex;
-    justify-content:space-around ;
+    justify-content:space-between ;
     align-items:center;
     background: 
     linear-gradient(#323431 0 0) padding-box, /*this is your grey background*/
     linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
     border: 1px solid transparent;
-    /* transform: rotateY(-25deg); */
+    background: url('../../../../../assets/P_rustico.jpg');
+    /* transform: rotateY(-2deg); */
     /* transform:   translateZ(-5rem) translatey(12rem); */
 }
 /* .contact .divBox:hover{
@@ -62,11 +63,10 @@
 
 } */
 .contact a i{
-    font-size: 5rem; 
+    font-size: 10rem; 
     padding: 0;
     margin: 0;
-  color:azure;
-
+    color:azure;
 }
 
 .camino{
@@ -74,4 +74,118 @@
     height: 50rem;
     background-color: red;
     transform: translateZ(-20rem)  rotateX(90deg);
+}
+
+.plataform{
+    position: relative;
+    width: 260px;
+    height: 440px;
+    background: rgba(0, 0, 0, .5);
+    transform:  rotate(90deg) skew(-25deg) scale(.8);
+    z-index: 2;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(134, 151, 165);
+    transform: translate(-80px,-80px);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layer::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: rgb(177, 192, 204);
+    transform-origin: left;
+    transform: skewy(45deg);
+}
+.layer::before{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(177, 192, 204);
+    transform-origin: top;
+    transform: skewx(45deg);
+}
+.divBox img{
+    width: 20rem;
+    padding-right: 3rem;
+}
+.divBox h2{
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.5); 
+    background: -webkit-linear-gradient(0deg,rgb(155, 233, 30)  0%, rgb(9, 233, 139) 40%,rgb(255, 230, 7)  70%);
+    background-clip:text; 
+    -webkit-background-clip: text;
+}
+    /* i{  
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg) ;
+    } */
+
+@media screen and (max-width: 1052px) {
+    .plataform{
+        width: 160px;
+        height: 340px;
+    }
+    .divBox h2{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .divBox img{
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 852px) {
+    .contact .divBox{
+        margin-top: 12rem;
+        flex-direction: column;
+    }
+    .plataform{
+        transform: translate(-5rem ,-5rem) rotate(70deg) skew(-25deg) scale(.8);
+    }
+    .divBox img{
+        transform: translatey(-6rem);
+        padding: 0;
+    }
+}
+@media screen and (max-width: 624px) {
+    .contact .divBox{
+        height: auto;
+    }
+    .plataform{
+        width:100px;
+        height: 200px;
+    }
+    .divBox h2{
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+    .divBox img{
+        width: 10rem;
+        transform: translatey(-6rem)
+
+    }
+}
+@media screen and (max-width: 450px) {
+    .contact .divBox{
+        width: 95%;
+    }
 }
