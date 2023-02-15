@@ -82,3 +82,11 @@
     }
 }
 
+.dx{
+    display: none;
+}
+
+.side-nav-contect:hover .dx{
+    display: block;
+    font-size: 2rem;
+}
