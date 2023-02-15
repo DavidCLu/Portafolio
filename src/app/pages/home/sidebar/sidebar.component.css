@@ -41,9 +41,12 @@
     margin: 1rem 0;
 }
 /*icono*/
+.nav-list-item a{
+}
 .nav-list-item i{
     font-size: 2rem;
     padding: 0 0.5rem; 
+    color:#f5b338;
 }
 .nav-list-item span a{
     font-size: 0.8rem;

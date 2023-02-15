@@ -3,7 +3,7 @@
     <ul class="nav-list " >
         <h2 class="dx"><i>Dx</i></h2>
         <li class="nav-list-item  " *ngFor="let item of sidebarList">
-            <i class={{item.icon}}></i>
+            <a href="#{{item.ref}}"> <i class={{item.icon}}></i></a>
             <span><a href="#{{item.ref}}" class="item-hiden" [ngClass]="{'item-open': slidebar}">{{item.name}}</a></span>
         </li>
         
