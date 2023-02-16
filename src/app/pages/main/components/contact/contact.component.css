@@ -53,7 +53,8 @@
     linear-gradient(#323431 0 0) padding-box, /*this is your grey background*/
     linear-gradient(to right, rgb(155, 233, 30), rgb(247, 189, 103),rgb(255, 230, 7)) border-box;
     border: 1px solid transparent;
-    background: url('../../../../../assets/P_rustico.jpg');
+    background: url('../../../../../assets/imagenes/img-paredMadera-opt.jpg');
+    background-size: cover;
     /* transform: rotateY(-2deg); */
     /* transform:   translateZ(-5rem) translatey(12rem); */
 }
