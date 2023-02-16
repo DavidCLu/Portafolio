@@ -12,6 +12,7 @@ export class CubeComponent implements OnInit {
 @Input('boxSide') faceSideIdValue = "";
 
 @Output()  closeComponent = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit(): void {
